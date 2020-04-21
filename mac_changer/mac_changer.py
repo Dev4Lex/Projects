@@ -8,7 +8,7 @@ import re #импорт модуля re - операции с регулярны
 def get_arguments(): #функция получения аргументов
     parser = optparse.OptionParser() #экземпляр класса для чтения входных параметров
     parser.add_option("-i", "--interface", dest="interface", help="Interface to change its MAC address") #добавление
-    # опции 'i, 'interface', храним значение в 'interface', справка 'Interface to change its MAC address'
+    # опции 'i', 'interface', храним значение в 'interface', справка 'Interface to change its MAC address'
     parser.add_option("-m", "--mac", dest="new_mac", help="New MAC address") #добавление опции 'm', 'mac',
     # храним значение в 'new_mac', справка 'New MAC address'
     (options, arguments) = parser.parse_args() #возвращает переменные 'interface' и 'new_mac' в 'options';
