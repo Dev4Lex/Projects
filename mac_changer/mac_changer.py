@@ -19,7 +19,7 @@ def get_arguments(): #функция получения аргументов
     elif not options.new_mac: #указзал ли пользователь new_mac, options.new_mac - доступ к значению 'interface'
         parser.error("[-] Please specify an new mac, use --help for more info.") ##обработка пользовательской ошибки
         # + информационне сообщение
-    return options #фнукция get_arguments возвращает значение options
+    return options #функция get_arguments возвращает значение options
 
 
 def change_mac(interface, new_mac): #функция замены MAC-адреса с 'interface' и 'new_mac' на входе

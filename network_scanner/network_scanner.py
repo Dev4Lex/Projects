@@ -8,7 +8,7 @@ def get_arguments(): #функция получения аргументов
     parser.add_argument("-t", "--target", dest="target", help="Target IP / IP range.") #добавление опции 't',
     # 'target', храним значение в 'target', справка 'Target IP / IP range.'
     options = parser.parse_args() #возвращает переменную 'target' в 'options'
-    return options #фнукция get_arguments возвращает значение options
+    return options #функция get_arguments возвращает значение options
 
 def scan(ip): #функция сканирования; передается ip-адрес
     arp_request = scapy.ARP(pdst = ip) #созадем экземпляр ARP запроса; подставляем ip в pdst
