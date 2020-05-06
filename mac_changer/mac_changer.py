@@ -17,8 +17,8 @@ def get_arguments(): #функция получения аргументов
         parser.error("[-] Please specify an interface, use --help for more info.") #обработка пользовательской ошибки
         # + информационне сообщение
     elif not options.new_mac: #указзал ли пользователь new_mac, options.new_mac - доступ к значению 'interface'
-        parser.error("[-] Please specify an new mac, use --help for more info.") ##обработка пользовательской ошибки
-        # + информационне сообщение
+        parser.error("[-] Please specify an new mac, use --help for more info.") #обработка пользовательской ошибки
+        # + информационное сообщение
     return options #функция get_arguments возвращает значение options
 
 
