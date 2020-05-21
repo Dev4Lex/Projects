@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- encoding: utf-8 -*-
 
 import scapy.all as scapy #импорт модуля и всех функций; вызов как scapy
 import argparse
