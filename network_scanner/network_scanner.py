@@ -12,7 +12,7 @@ def get_arguments(): #функция получения аргументов
     return options #функция get_arguments возвращает значение options
 
 def scan(ip): #функция сканирования; передается ip-адрес
-    arp_request = scapy.ARP(pdst = ip) #созадем экземпляр ARP запроса; подставляем ip в pdst
+    arp_request = scapy.ARP(pdst = ip) #создаем экземпляр ARP запроса; подставляем ip в pdst
     broadcast = scapy.Ether(dst = "ff:ff:ff:ff:ff:ff") #создаем Ethernet фрэйм; широковещательный адрес в dst
     arp_request_broadcast = broadcast/arp_request #создаем переменную, содержащую broadcast и arp_request
     answered_list = scapy.srp(arp_request_broadcast, timeout=1, verbose=False)[0] #отправка пакета
